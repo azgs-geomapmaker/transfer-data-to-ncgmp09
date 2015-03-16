@@ -1,10 +1,6 @@
 import arcpy, shutil
 from arcpy import env
 
-# Set the workspace environment
-#
-env.workspace = "G:\\geologic map data\\azgs\\mixed"
-
 # List all file geodatabases in the current workspace 
 # 
 workspaces = arcpy.ListWorkspaces("*", "")
@@ -12,12 +8,12 @@ for workspace in workspaces:
     name = arcpy.Describe(workspace).name
     namepart = name.split(".")
     newname = namepart[0]
-    # Set local variables
+    # Set local variables 
     #
     featureclassin = "OverlayPolys"
     featureclassout = "OtherPolys"
-    inFC = "G:\\geologic map data\\azgs\\mixed\\" + name + "\\GeologicMap\\" + featureclassin
-    outFC = "G:\\geologic map data\\ncgmp\\mixed\\"+newname+".gdb\\GeologicMap\\" + featureclassout
+    inFC = "C:\\Documents\\azgs\\mixed\\" + name + "\\GeologicMap\\" + featureclassin
+    outFC = "C:\\Documents\\ncgmp\\mixed\\"+newname+".gdb\\GeologicMap\\" + featureclassout
     schemaType = "NO_TEST"
     subtype = ""
 

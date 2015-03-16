@@ -1,9 +1,6 @@
 import arcpy, shutil
 from arcpy import env
 
-# Set the workspace environment
-#
-env.workspace = "G:\\geologic map data\\azgs\\mixed"
 
 # List all file geodatabases in the current workspace 
 # 
@@ -14,8 +11,8 @@ for workspace in workspaces:
     newname = namepart[0]
     # Set local variables
     #
-    inFC = "G:\\geologic map data\\azgs\\mixed\\" + name + "\\ExtendedAttributes"
-    outFC = "G:\\geologic map data\\ncgmp\\mixed\\"+newname+".gdb\\ExtendedAttributes"
+    inFC = "C:\\Documents\\ncgmp\\mixed\\" + name + "\\ExtendedAttributes"
+    outFC = "C:\\Documents\\ncgmp\\mixed\\"+newname+".gdb\\ExtendedAttributes"
     schemaType = "NO_TEST"
     subtype = ""
 

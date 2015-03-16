@@ -1,9 +1,6 @@
 import arcpy, shutil
 from arcpy import env
 
-# Set the workspace environment
-#
-env.workspace = "G:\\geologic map data\\azgs\\mixed"
 
 # List all file geodatabases in the current workspace 
 # 
@@ -16,8 +13,8 @@ for workspace in workspaces:
     #
     featureclassin = "DescriptionOfMapUnits"
     featureclassout = "DescriptionOfMapUnits"
-    inFC = "G:\\geologic map data\\azgs\\mixed\\" + name + "\\" + featureclassin
-    outFC = "G:\\geologic map data\\ncgmp\\mixed\\"+newname+".gdb\\" + featureclassout
+    inFC = "C:\\Documents\\azgs\\mixed\\" + name + "\\" + featureclassin
+    outFC = "C:\\Documents\\ncgmp\\azgs\\mixed\\"+newname+".gdb\\" + featureclassout
     schemaType = "NO_TEST"
     subtype = ""
 

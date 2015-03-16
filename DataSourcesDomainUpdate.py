@@ -1,9 +1,6 @@
 import arcpy, shutil
 from arcpy import env
 
-# Set the workspace environment
-#
-env.workspace = "G:\\geologic map data\\ncgmp\\mixed\\"
 
 # List all file geodatabases in the current workspace 
 # 

@@ -1,9 +1,6 @@
 import arcpy, shutil
 from arcpy import env
 
-# Set the workspace environment
-#
-env.workspace = "G:\\geologic map data\\azgs\\mixed"
 
 datasetitems = ["OrientationDataPoints",
          "SamplePoints",
@@ -39,7 +36,7 @@ for workspace in workspaces:
             name = arcpy.Describe(fc).name
             print name
             if name not in datasetitems:
-                ws2 = "G:\\geologic map data\\ncgmp\\mixed\\" +  newname + ".gdb"
+                ws2 = "C:\\Documents\\ncgmp\\mixed\\" +  newname + ".gdb"
                 print name + " not in dataset items, copying to ncgmp"
                 arcpy.FeatureClassToFeatureClass_conversion(fc, ws2 + "\\GeologicMap", 
                                             name)    
@@ -57,7 +54,7 @@ for workspace in workspaces:
         featureclassname = arcpy.Describe(featureclass).name
         print featureclassname
         if featureclassname not in standaloneitems:
-            ws2 = "G:\\geologic map data\\ncgmp\\mixed\\" +  newname + ".gdb"
+            ws2 = "C:\\Documents\\ncgmp\\mixed\\" +  newname + ".gdb"
             print featureclassname + " not in dataset items, copying to ncgmp"
             arcpy.FeatureClassToFeatureClass_conversion(featureclass, ws2 + "\\GeologicMap", featureclassname)
     print "copying additional data completed. . ."
