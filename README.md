@@ -11,8 +11,8 @@ open each individual script to set environment and data parameters
 
 examples:
 
-  - InFC="C:\\Users\<user name>\Documents\\azgs\\mixed\\"
-  - outFC="C:\\Users\<user name>\Documents\\ncgmp\\mixed\\"
+  - InFC= "C:\\Users\\ <user name> \\Documents\\azgs\\mixed\\"
+  - outFC= "C:\\Users\\ <user name> \\Documents\\ncgmp\\mixed\\"
 
 ABRANDNEWDATABASE.py - creates a new NCGMP database
 
