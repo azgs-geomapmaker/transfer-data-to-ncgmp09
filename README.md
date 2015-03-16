@@ -9,8 +9,8 @@ in these scripts, not all fields that are in ncgmp09 schema are accounted for, p
 
 open each individual script to set environment and data parameters 
 examples:
-  -InFC="C:\\Users\\<user name>\\Documents\\azgs\\mixed\\"
-  -outFC="C:\\Users\\<user name>\\Documents\\ncgmp\\mixed\\"
+  - InFC="C:\\Users\\<user name>\\Documents\\azgs\\mixed\\"
+  - outFC="C:\\Users\\<user name>\\Documents\\ncgmp\\mixed\\"
 
 ABRANDNEWDATABASE.py - creates a new NCGMP database
 execute-mixed.py- transfers the data to a NCGMP database
