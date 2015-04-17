@@ -14,7 +14,7 @@ for workspace in workspaces:
     featureclassin = "DescriptionOfMapUnits"
     featureclassout = "DescriptionOfMapUnits"
     inFC = "C:\\Documents\\azgs\\mixed\\" + name + "\\" + featureclassin
-    outFC = "C:\\Documents\\ncgmp\\azgs\\mixed\\"+newname+".gdb\\" + featureclassout
+    outFC = "C:\\Documents\\ncgmp\\mixed\\"+newname+".gdb\\" + featureclassout
     schemaType = "NO_TEST"
     subtype = ""
 
